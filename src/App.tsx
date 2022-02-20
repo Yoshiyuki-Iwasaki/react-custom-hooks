@@ -1,5 +1,5 @@
 import Top from "./page/top";
-import Post from "./page/post";
+import Toggle from "./page/toggle";
 import Couter from "./page/counter";
 import Layout from "./Layout";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -17,11 +17,14 @@ function App() {
             <li>
               <a href="/couter">Couter</a>
             </li>
+            <li>
+              <a href="/toggle">Toggle</a>
+            </li>
           </ul>
           <Routes>
             <Route path={"/"} element={<Top />} />
             <Route path={"/couter"} element={<Couter />} />
-            <Route path={"/post"} element={<Post />} />
+            <Route path={"/toggle"} element={<Toggle />} />
           </Routes>
         </Router>
       </Layout>
