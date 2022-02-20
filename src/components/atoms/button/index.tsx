@@ -6,8 +6,10 @@ interface Props {
   onClick: () => void;
 }
 
-const Button: React.FC<Props> = ({ children, onClick }) => {
+export const Button: React.FC<Props> = ({ children, onClick }) => {
   return <ButtonLayout onClick={onClick}>{children}</ButtonLayout>;
 };
 
-export default Button;
+export const ToggleButton: React.FC<Props> = ({ children, onClick }) => {
+  return <ButtonLayout onClick={onClick}>{children}</ButtonLayout>;
+};
